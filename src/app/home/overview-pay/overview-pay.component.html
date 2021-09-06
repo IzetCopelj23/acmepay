@@ -1,0 +1,19 @@
+<div class="container-fluid">
+  <div class="jumbotron text-center">
+    <div class="row d-flex justify-content-center" *ngIf="paymentDetails">
+      <p>Please, select the payment method</p>
+      <button
+        mat-raised-button
+        color="primary"
+        *ngFor="let item of paymentDetails.listOfPaymentMethods"
+        class="acme-btn-primary ms-3"
+        (click)="onMethodSelection(item.link)"
+      >
+        {{ item.name }}
+      </button>
+
+      <!-- <button mat-raised-button color="primary" class="acme-btn-primary" [routerLink]="['/visa']" >VISA</button>
+      <button mat-raised-button color="primary" class="acme-btn-primary ms-3" [routerLink]="['/sepa']" >SEPA</button> -->
+    </div>
+  </div>
+</div>

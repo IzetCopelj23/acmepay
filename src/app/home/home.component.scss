@@ -1,0 +1,13 @@
+.parent-div {
+  height: calc(90vh - 40px);
+
+  .logo {
+    width: 100px;
+  }
+  .container-fluid {
+    width: 700px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    min-height: calc(70vh - 40px);
+  }
+}
